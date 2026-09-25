@@ -23,6 +23,8 @@ export const users = pgTable("users", {
   slackId: text("slack_id").notNull().unique(),
   hackatimeId: text("hackatime_id"),
   hackatimeToken: text("hackatime_token"),
+  bannedAt: timestamp("banned_at", { withTimezone: true }),
+  banReason: text("ban_reason"),
 
   fullName: text("full_name"),
   firstName: text("first_name"),
