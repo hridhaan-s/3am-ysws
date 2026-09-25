@@ -8,7 +8,7 @@ import { getSession } from "./session";
 import { displayName } from "./id-token";
 import type { HcaClaims } from "./id-token";
 
-export class MissingIdentityError extends Error {
+export class BannedUserError extends Error {\n  constructor(public readonly sub: string, public readonly reason: string | null) {\n    super("this account is banned");\n    this.name = "BannedUserError";\n  }\n}\n\nexport class MissingIdentityError extends Error {
   constructor(public readonly field: "email" | "slack_id") {
     super(`claims are missing ${field}`);
     this.name = "MissingIdentityError";
