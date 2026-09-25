@@ -1,0 +1,8 @@
+.page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #090909; color: #fff; }
+.card { width: min(620px, 100%); padding: 44px; border: 1px solid #3a1515; border-radius: 20px; background: #111; text-align: center; box-shadow: 0 20px 80px rgba(0,0,0,.35); }
+.icon { font-size: 54px; margin-bottom: 18px; }
+.kicker { margin: 0 0 10px; font-size: 12px; text-transform: uppercase; letter-spacing: .14em; opacity: .6; }
+.card h1 { margin: 0; font-size: clamp(34px, 8vw, 58px); letter-spacing: -.04em; }
+.reason { margin: 24px auto 0; max-width: 500px; font-size: 18px; line-height: 1.6; color: #ffb4b4; }
+.help { margin: 28px auto 0; max-width: 500px; line-height: 1.6; color: #aaa; }
+.help a { color: #fff; }
