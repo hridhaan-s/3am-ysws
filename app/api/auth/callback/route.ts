@@ -7,7 +7,7 @@ import { exchangeCode } from "@/lib/auth/hca";
 import { verifyIdToken } from "@/lib/auth/id-token";
 import { OAUTH_STATE_COOKIE, parseOAuthState } from "@/lib/auth/oauth-state";
 import { setSession } from "@/lib/auth/session";
-import { MissingIdentityError, upsertUser } from "@/lib/auth/users";
+import { BannedUserError, MissingIdentityError, upsertUser } from "@/lib/auth/users";
 
 export const dynamic = "force-dynamic";
 
